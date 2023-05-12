@@ -1,0 +1,435 @@
+.container-fluid.mt-5 {
+    padding: 0;
+}
+
+/*header styling*/
+
+header {
+    position: relative;
+    background-color: #000;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*video dark overlay*/
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.btn-head {
+    border-color: white;
+    color: white;
+    z-index: 2;
+    background-color: transparent;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.6rem;
+    padding: 20px 50px;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+}
+
+.btn-head:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.5s ease-out;
+}
+
+
+/* video postioning and resizing*/
+header img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    text-align: center;
+}
+
+/*A great weekend in glasgow text*/
+.title h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+/*cards using flexbox to place them in the center horizontally*/
+
+.row.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#parks {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#parks.fadeIn {
+  opacity: 1;
+}
+
+#outdoor {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#outdoor.fadeIn {
+  opacity: 1;
+}
+
+
+.display-6{
+padding: 5px;
+}
+
+.card-img-top{
+    width: 286px;
+    height: 191px;
+}
+
+/*card button styling usign width and height properties, as well as padding for the inside*/
+.more-details {
+    width: 30px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+.card-body{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+h2 span {
+    color: var(--primary-color);
+}
+
+.heading-text{
+    color: var(--primary-color)
+}
+
+/*services styling*/
+
+.row.service {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--secondary-color);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: var(--text-color);
+}
+
+
+.col-sm {
+    padding: 0 !important;
+}
+
+iframe{
+    width: 70%;
+    height: 80%;
+    margin: 50px;
+}
+
+div.text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 35px;
+}
+
+.list-group {
+    margin-top: 5%;
+}
+
+li {
+    list-style: none;
+}
+
+li.list-group-item {
+    border: none;
+    display: flex;
+    gap: 3%;
+    list-style: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+
+}
+
+/*checkbox*/
+
+.form-check-input {
+    padding: 15px;
+    margin-left: 10px;
+
+}
+
+/*checkbox using the pseduo class ::before to create tick*/
+.form-check-input::before {
+    content: "\2713";
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    bottom: 0;
+
+}
+
+/*checkbox pointer-events to none so the user can't physically click on the checkbox*/
+
+input#firstCheckbox,
+input#secondCheckbox {
+    background-color: white;
+    pointer-events: none;
+}
+
+/*contact*/
+
+.d-flex.justify-content-center.p-4.text-white {
+    margin-bottom: 3%;
+}
+
+h3.display-5.text-dark {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1%;
+}
+
+button.btn.btn-dark.d-block {
+    display: block;
+    width: 80%;
+    margin-top: 2%;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+.contact.col-sm-12 {
+    margin-left: 0%;
+}
+
+form .btn {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: flex;
+    width: 80%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 5%;
+}
+
+form .btn:hover {
+    background-color: #0b7bb3;
+    color: #f3f3f3;
+}
+
+
+
+/*media queries*/
+
+/*mobile screens 600px and down*/
+
+@media screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /*heading and sub text*/
+
+   
+    h1.display-3 {
+        font-size: 4rem;
+        white-space: wrap;
+        text-align: left;
+    }
+
+    p.lead.mb-0 {
+        font-weight: 300;
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+
+    .row.cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px 0px 60px;
+    }
+
+    /*services*/
+    p.text {
+        margin-top: 0%;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    /*contact*/
+
+
+    h3.display-5.text-dark {
+        text-align: center;
+    }
+
+    .contact.col-sm-12 {
+        margin-left: 10%;
+    }
+
+    form .btn:hover {
+        background-color: var(--primary-color);
+    }
+
+    .social-links {
+    margin-left: -3%;
+}
+
+.peopleLogo{
+    width:50%
+}
+
+iframe {
+    width: 80%;
+    height: 30vh;
+    margin: 50px;
+}
+}
+
+/*media quieries for tablets and laptops 600px and up*/
+@media screen and (min-width: 600px) {
+
+
+    h1.display-3 {
+        white-space: nowrap;
+        font-size: 2.5rem;
+    }
+
+
+    /*cards*/
+    .row.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*services*/
+    .row.service {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .col-sm h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    p.text {
+        margin-top: -2%;
+        padding: 40px;
+    }
+
+
+    ul.list-group {
+        margin-bottom: 2%;
+    }
+
+    form .btn:hover {
+        background-color: var(--primary-color);
+    }
+}
+
+/* tablet landscape and desktops*/
+
+@media screen and (min-width: 900px) {
+
+    /*cards*/
+    .row.cards {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+
+    /*services*/
+    .col-sm h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-top: 5%;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    .row.service {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /*contact*/
+
+    h3.display-5.text-dark {
+        margin-left: 50%;
+        transform: translateX(-35%);
+        letter-spacing: 1px;
+
+    }
+
+    .d-flex.justify-content-center.p-4.text-white {
+        margin-left: 15% !important;
+    }
+}

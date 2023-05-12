@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ski centre in Glasgow, have some fun while you're in our city.">
+    <title>Great Weekend in Glasgow</title>
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--internal styling-->
+    <style>
+        .SC {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        div#carouselExampleIndicators {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px;
+            margin-bottom: 5%;
+        }
+
+        .text-head {
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 7%;
+        }
+
+        /*description styling*/
+
+        .services {
+            color: var(--text-color);
+
+        }
+
+
+        .col-sm {
+            padding: 0 !important;
+        }
+
+        .col-sm h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 5%;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        p.text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            text-align: justify;
+            padding: 35px;
+            margin-top: 3%;
+            margin-bottom: 5%;
+        }
+
+        .list-group {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        li{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        /*media quieries*/
+
+        @media screen and (max-width: 600px) {
+
+            /*carousel styling*/
+
+            .text-head {
+                margin-top: 3%;
+            }
+
+            .SC {
+                object-fit: contain;
+                height: 295px;
+            }
+
+            div#carouselExampleIndicators {
+                width: 75%;
+                padding: 0px;
+                margin-bottom: 0px;
+            }
+
+            .carousel-indicators {
+                bottom: 45px;
+            }
+
+            /*tignes description*/
+            .row.service {
+                display: flex;
+                flex-direction: column-reverse;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .col-sm h2 {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            p.text {
+                margin-top: -2%;
+                padding: 40px;
+            }
+
+
+            ul.list-group {
+                margin-bottom: 2%;
+            }
+
+        }
+
+        @media screen and (min-width: 600px) {
+
+            .row.service {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 2%;
+                padding: 2%;
+            }
+
+
+            .col-md-12{
+                margin-top: 5%;
+            }
+
+            h5.mx-5{
+                margin-bottom: -3%;
+                color: var(--primary-color);
+                font-size: 1.5rem;
+            }
+
+           
+        }
+    </style>
+
+    <!--end of internal styling-->
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">
+                     <img class ="logo" src="images/website logo - white.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                     <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Parks and Recreational</a>
+                    <a class="nav-link" href="index.html">Experience</a>
+                    <a class="nav-link" href="ourStory.html">Our Story</a>
+                    <a class="nav-link" href="index.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!--end of navigation-->
+
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-head">Ski and Snowboard Centre</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <img src="/images/carousels/ski_centre/sc_image1.jpg" class="SC" alt="Ski Slope" loading="lazy">
+                    <div class="carousel-item active">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carousels/ski_centre/sc_image2.jpg" class="SC" alt="Ski Slope" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carousels/ski_centre/sc_image3.jpg" class="SC" alt="Ski Slope" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carousels/ski_centre/sc_image4.jpg" class="SC" alt="Ski Slope" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carousels/ski_centre/sc_image5.jpg" class="SC" alt="Ski Slope"
+                            loading="lazy">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!--description of park-->
+
+            <div class="services bg-light">
+                <div class="row service">
+                    <div class="col-sm">
+                        <h2 class="display-5 text-left mx-5 px-2">Ski and Snowboard Centre</h2>
+                        <p class="text">
+                            At Glasgow Ski and Snowboard Centre learn to ski, learn to board, and 
+                            learn to do either better! Whether an absolute beginner or an aspiring carver, 
+                            you'll learn more quickly and have more fun in group lessons. If you are a 
+                            beginner their 3 magic carpet uplifts will take you up the slopes with the least 
+                            amount of effort on your part, and for the more experienced they have the Poma Tows.
+                            <br><br>Open tubing sessions also available on schedule, where the kids can zip down the hill on an inflatable ring.
+
+                            <h5 class = "mx-5">Facilities</h5>
+                            <ul class="list-group mx-5">
+                                    <li>Large ski slope</li>
+                                    <li>Lessons for young children</li>
+                                    <li>Any skill level</li>
+                                    <li>Can be used in any weather</li>
+                                    <li>Good location</li>
+                            </ul>
+                        </p>
+            
+                    </div>
+                </div>
+
+            </div>
+
+
+                       <footer class="footer text-center text-white">
+                    
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Form -->
+  
+      <form action="form">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto mt-4">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12 mt-4">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example29" class="form-control">
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto mt-2">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- social links -->
+<div class="social-links">
+  <img src="images/bxl_facebook-circle.svg" alt="facebook page">
+  <img src="images/linkedin-box-fill.svg" alt="linkendin account">
+  <img src="images/twitter-circle-filled.svg" alt="twiiter account">
+  <img src="images/youtube-fill.svg" alt="youtbe account">
+</div>
+
+<!-- social links -->
+   <!-- Section: Links  -->
+
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <img class = "peopleLogo" src="images/PEOPLE-MAKE-GLASGOW-brand-image-2-1002x542.jpeg" alt="people make glasgow logo">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto  pb-2">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">
+      Parks
+    </h6>
+    <p>
+      <a href="glasgow_green.html" class="text-reset text-decoration-none">Glasgow Green</a>
+    </p>
+    <p>
+      <a href="victoria_park.html" class="text-reset text-decoration-none">Victoria Park</a>
+    </p>
+    <p>
+      <a href="kelvingrove_park.html" class="text-reset text-decoration-none">Kelvingrove Park</a>
+    </p>
+
+    <h6 class="text-uppercase fw-bold mb-4">
+      Outdoor Activities
+    </h6>
+    <p>
+      <a href="ski_centre.html" class="text-reset text-decoration-none">Ski and Snowboard Centre</a>
+    </p>
+    <p>
+      <a href="sightseeing.html" class="text-reset text-decoration-none">City Sightseeing Glasgow</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-2 pt-2 mb-5">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">
+      Useful links
+    </h6>
+    <p>
+      <a href="#!" class="text-reset text-decoration-none">Booking Hotels</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset text-decoration-none">Taxi Fare</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset text-decoration-none">Package Deals</a>
+    </p>
+    <p>
+      <a href="#!" class="text-reset text-decoration-none">Help</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+</div>
+<!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2023 Copyright:
+                        <a class="text-dark text-white text-decoration-none" href="https://mdbootstrap.com/">Great
+                            weekend glasgow</a>
+                    </div>
+ 
+  <!-- Copyright -->
+</footer>
+
+        </div>
+    </div>
+
+    <!--bootstrap 5 js link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
